@@ -102,7 +102,7 @@ public class Main5Activity extends AppCompatActivity implements BackInterface {
                     getSupportFragmentManager().popBackStack("fragA", 0);
                     break;
                 case "spre":
-                    SharedPreferences sharedPreferences = getApplication().getSharedPreferences("MyText",0);
+                    SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("MyText",0);
                     SharedPreferences.Editor editor = sharedPreferences.edit();
 //                    editor.putBoolean("key_name", true);
 //                    editor.putInt("key_name", 22592);
@@ -112,7 +112,7 @@ public class Main5Activity extends AppCompatActivity implements BackInterface {
 
 
                     editor.commit();
-                    Toast.makeText(this,sharedPreferences.getString("key_name", null), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, sharedPreferences.getString("key_name", null), Toast.LENGTH_SHORT).show();
                     break;
             }
         }else {

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/layout_padding">
+
+    <Button
+        android:onClick="ClickEvent"
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_save"
+        android:layout_below="@id/etEmail"
+        android:layout_marginTop="@dimen/btn_marginTop"/>
+
+    <Button
+        android:onClick="ClickEvent"
+        android:id="@+id/btnRetrieve"
+        android:text="@string/btn_retrieve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btnSave"
+        android:layout_below="@id/etEmail"
+        android:layout_marginTop="@dimen/btn_marginTop"/>
+
+    <Button
+        android:onClick="ClickEvent"
+        android:id="@+id/btnClear"
+        android:text="@string/btn_clear"
+        android:layout_toRightOf="@id/btnRetrieve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEmail"
+        android:layout_marginTop="@dimen/btn_marginTop"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/etEmail"
+        android:layout_alignStart="@+id/etEmail" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/etName"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

@@ -67,7 +67,9 @@ public class MainActivity extends AppCompatActivity {
 
         if (TextUtils.isEmpty(name) || TextUtils.isEmpty(mail)){
             Toast.makeText(this, "Name or Email is required !", Toast.LENGTH_SHORT).show();
-        }else {
+        } else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(mail).matches()){
+            Toast.makeText(this, "Email is error !", Toast.LENGTH_SHORT).show();
+        } else {
             SharedPreferences.Editor editor = sharedPreferences.edit();
             editor.putString("name", name);
             editor.putString("email", mail);

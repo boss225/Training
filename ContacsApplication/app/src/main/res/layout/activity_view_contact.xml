@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewContactActivity"
+    android:background="@color/colorWhite">
+
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="283dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imgIconUser"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:text="@string/app_name"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imgIconUser"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@drawable/iconuser" />
+
+    <ImageView
+        android:id="@+id/imgIconPhone"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/imgIconUser"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/imgIconUser"
+        android:layout_marginTop="81dp"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@drawable/iconphone" />
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="282dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imgIconPhone"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:text="@string/app_name"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvSex"
+        android:layout_width="282dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imgIconSex"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:text="@string/app_name"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imgIconSex"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/imgIconUser"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/imgIconUser"
+        android:layout_marginTop="141dp"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@drawable/iconsex" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="193dp"
+        android:ems="10"
+        android:hint="@string/hind_name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="132dp"
+        android:hint="@string/hind_phone"
+        android:inputType="phone"
+        android:maxLength="11"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="82dp"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true">
+
+        <RadioButton
+            android:id="@+id/radioBtnMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/hind_male" />
+
+        <RadioButton
+            android:id="@+id/radioBtnFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/hind_female" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtEditContact"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="207dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/title_edit"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:text="@string/btn_edit" />
+
+</RelativeLayout>

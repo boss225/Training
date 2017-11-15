@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Contacs Application</string>
+    <string name="hind_name">Name</string>
+    <string name="hind_phone">Phone</string>
+    <string name="hind_male">Male</string>
+    <string name="hind_female">Female</string>
+    <string name="title_edit">Edit contact</string>
+    <string name="btn_edit">Edit</string>
+    <string name="add_contacts">Add Contacts</string>
+    <string name="title_callsms">Call or Message ?</string>
+</resources>

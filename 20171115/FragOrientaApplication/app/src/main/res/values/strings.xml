@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FragOrienta Application</string>
+    <dimen name="width_imgv">50dp</dimen>
+    <dimen name="height_imgv">50dp</dimen>
+</resources>

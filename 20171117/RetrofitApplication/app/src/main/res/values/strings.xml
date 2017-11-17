@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Retrofit Application</string>
+    <string name="stack_base">https://api.stackexchange.com</string>
+</resources>

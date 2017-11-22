@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Weather Application</string>
+    <string name="action_settings">Settings</string>
+    <string name="wheather">Wheather for Earth</string>
+    <string name="date_now">20171118</string>
+    <string name="day_1">Day +1</string>
+    <string name="day_2">Day +2</string>
+    <string name="day_3">Day +3</string>
+    <string name="weather_location" formatted="false">Weather for %s, %s</string>
+    <string name="weather_icon" formatted="false">"http://openweathermap.org/img/w/%s.png"</string>
+    <string name="weather_today" formatted="false">Today : %s</string>
+    <string name="weather_temp" formatted="false">%s°C - %s°C</string>
+    <string name="C18_31">18°C - 31°C</string>
+    <string name="title_dialog_search">Search by city name</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_submit">Submit</string>
+    <string name="input_city_name">City name</string>
+    <string name="check_gps">Please check Wifi or GPS</string>
+</resources>

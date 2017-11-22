@@ -48,7 +48,7 @@ public class SearchDialog extends DialogFragment {
                     @Override
                     public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
                         mEdtSearch = (EditText) dialog.findViewById(R.id.edt_search_city);
-                        mWeatherAPI.getWeatherCurrentByName(mEdtSearch.getText().toString().trim(), WeatherAPI.KEY_API).enqueue(weatherCurrentByName);
+                        mSearchByLocation.getWeatherByLocation(mEdtSearch.getText().toString().trim());
 //                        Toast.makeText(getActivity(), mEdtSearch.getText().toString().trim(), Toast.LENGTH_SHORT).show();
                         dialog.dismiss();
                     }
@@ -62,23 +62,4 @@ public class SearchDialog extends DialogFragment {
         return dialog.build();
     }
 
-    Callback<WeatherCurrentResponse> weatherCurrentByName = new Callback<WeatherCurrentResponse>() {
-        @Override
-        public void onResponse(Call<WeatherCurrentResponse> call, Response<WeatherCurrentResponse> response) {
-            if (response.isSuccessful() && response.body() != null){
-                WeatherCurrentResponse data = response.body();
-                String lat = String.valueOf(data.getCoord().getLat());
-                String lon = String.valueOf(data.getCoord().getLon());
-
-                mSearchByLocation.getWeatherByLocation(lat, lon);
-            }else {
-                Log.d("WeatherCurrentByName", "Code: " + response.code() + " Message: " + response.message());
-            }
-        }
-
-        @Override
-        public void onFailure(Call<WeatherCurrentResponse> call, Throwable t) {
-            t.printStackTrace();
-        }
-    };
 }

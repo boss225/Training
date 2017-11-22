@@ -239,8 +239,8 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
     }
 
     @Override
-    public void getWeatherByLocation(String lat, String lon) {
-        mWeatherAPI.getWeatherCurrentByCoord(lat, lon, WeatherAPI.KEY_API).enqueue(weatherCurrentCallBack);
-        mWeatherAPI.getWeatherForecastByCoord(lat, lon, ApiUtils.NUM_ITEM, WeatherAPI.KEY_API).enqueue(weatherForecastCallBack);
+    public void getWeatherByLocation(String location) {
+        mWeatherAPI.getWeatherCurrentByName(location, WeatherAPI.KEY_API).enqueue(weatherCurrentCallBack);
+        mWeatherAPI.getWeatherForecastByName(location, ApiUtils.NUM_ITEM, WeatherAPI.KEY_API).enqueue(weatherForecastCallBack);
     }
 }

@@ -5,5 +5,5 @@ package com.ndv.wa.weartherapplication.listener;
  */
 
 public interface SearchByLocation {
-    void getWeatherByLocation(String lat, String lon);
+    void getWeatherByLocation(String location);
 }
